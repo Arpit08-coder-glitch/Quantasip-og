@@ -379,7 +379,7 @@ function Home() {
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>Cadastral Data Sets</h4>
-                  <a className={styles.ourServiceButton} href="https://quantasip.com/services#service1">Know More</a>
+                  <a className={styles.ourServiceButton} href="/services#service1">Know More</a>
                 </div>
               </div>
               {/* Card 2 */}
@@ -388,7 +388,7 @@ function Home() {
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>Land Record Verification</h4>
-                  <a className={styles.ourServiceButton} href="https://quantasip.com/services#service2">Know More</a>
+                  <a className={styles.ourServiceButton} href="/services#service2">Know More</a>
                 </div>
               </div>
               {/* Card 3 */}
@@ -397,7 +397,7 @@ function Home() {
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>API Services</h4>
-                  <a className={styles.ourServiceButton} href="https://quantasip.com/services#service2">Know More</a>
+                  <a className={styles.ourServiceButton} href="/services#service2">Know More</a>
                 </div>
               </div>
               {/* Card 4 */}
@@ -406,7 +406,7 @@ function Home() {
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>Data Cleaning, Correction</h4>
-                  <a className={styles.ourServiceButton} href="https://quantasip.com/services#service3">Know More</a>
+                  <a className={styles.ourServiceButton} href="/services#service3">Know More</a>
                 </div>
               </div>
             </div>
