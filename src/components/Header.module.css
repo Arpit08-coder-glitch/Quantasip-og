@@ -35,6 +35,7 @@
 .navMenu {
   margin-left: 750px;
   margin-right: 32px;
+  padding-right: 48px;
 }
 .navMenu ul {
   display: flex;
