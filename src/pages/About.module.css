@@ -227,16 +227,19 @@
   font-size: 1.13rem;
   color: #1a237e;
   margin-bottom: 4px;
+  text-align: center;
 }
 .testimonialTitle {
   font-weight: 500;
   color: #555;
   margin-bottom: 8px;
+  text-align: center;
 }
 .testimonialText {
   color: #333;
   font-size: 1.01rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .contactSection {
