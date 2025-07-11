@@ -253,11 +253,6 @@ function Careers() {
           <h5 className={styles.contactSubtitle}>
             Connect with us today for tailored GIS solutions and expert support for your infrastructure projects.
           </h5>
-          <div className={styles.contactInfo}>
-            <a href="mailto:info@quantasip.com" className={styles.contactLink}>info@quantasip.com</a>
-            <a href="tel:7517860524" className={styles.contactLink}>+91 7517860524</a>
-            <span className={styles.contactAddress}>404, Wall Street 24, near McDonald's, Motiram Nagar, Warje, Pune, Maharashtra 411058</span>
-          </div>
           {/* Placeholder for contact form */}
           <form className={styles.contactForm}>
             <input type="text" placeholder="Name" className={styles.contactInput} />
