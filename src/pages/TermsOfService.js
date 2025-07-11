@@ -72,8 +72,7 @@ function TermsOfService() {
 
         {/* Get in Touch Section */}
         <section className={styles.getInTouchSection} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-          <h3 style={{textAlign: 'center'}}>Get in Touch</h3>
-          <h5 style={{textAlign: 'center', marginBottom: 32}}>Connect with us today for tailored GIS solutions and expert support for your infrastructure projects.</h5>
+          <h3 style={{textAlign: 'center', marginBottom: '60px'}}>Get in Touch</h3>
           {/* Contact Form */}
           <form className={styles.contactForm} style={{maxWidth: 640, margin: '0 auto', background: '#fff', borderRadius: 18, boxShadow: '0 2px 16px rgba(0,0,0,0.09)', padding: '56px 40px 48px 40px', display: 'flex', flexDirection: 'column', gap: 24, position: 'relative'}} onSubmit={handleFormSubmit}>
             <span style={{display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 88, height: 88, borderRadius: '50%', background: '#f4f6fa', border: '2.5px solid #e0e0e0', position: 'absolute', left: '50%', top: '-44px', transform: 'translateX(-50%)', boxShadow: '0 2px 8px rgba(0,0,0,0.06)'}}>
