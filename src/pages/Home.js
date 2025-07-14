@@ -397,16 +397,53 @@ function Home() {
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>API Services</h4>
-                  <a className={styles.ourServiceButton} href="/services#service2">Know More</a>
+                  <a className={styles.ourServiceButton} href="/services#service3">Know More</a>
                 </div>
               </div>
               {/* Card 4 */}
               <div className={styles.ourServiceCard}>
-                <div className={styles.ourServiceBg} style={{backgroundImage: 'url(https://quantasip.com/wp-content/uploads/2023/05/3.webp)'}} />
+                <div className={styles.ourServiceBg} style={{backgroundImage: 'url(https://quantasip.com/wp-content/uploads/2024/08/flat-lay-drawing-with-colorful-lines-scaled.jpg)'}} />
                 <div className={styles.ourServiceOverlay} />
                 <div className={styles.ourServiceContent}>
                   <h4 className={styles.ourServiceCardTitle}>Data Cleaning, Correction</h4>
                   <a className={styles.ourServiceButton} href="/services#service3">Know More</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Project Previews Section */}
+          <section className={styles.projectPreviewsSection}>
+            <h2 className={styles.projectPreviewsTitle}>Project Previews</h2>
+            <div className={styles.projectPreviewsGrid}>
+              {/* Example Project Card 1 */}
+              <div className={styles.projectPreviewCard}>
+                <div className={styles.projectPreviewImage} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80)'}} />
+                <div className={styles.projectPreviewContent}>
+                  <h3 className={styles.projectPreviewTitle}>BhuQuanta</h3>
+                  <p className={styles.projectPreviewDesc}>A modern GIS platform for land record management and visualization, featuring real-time updates and analytics.</p>
+                  <div className={styles.projectPreviewTechStack}>
+                    <span>React</span> <span>Node.js</span> <span>PostGIS</span>
+                  </div>
+                  <a className={styles.projectPreviewButton} href="#" target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <svg width="18" height="18" fill="#00fff7" style={{marginLeft: 6}} viewBox="0 0 24 24"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5v14h14v-7h-2v5H7V7h5V5H5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              {/* Example Project Card 2 */}
+              <div className={styles.projectPreviewCard}>
+                <div className={styles.projectPreviewImage} style={{backgroundImage: 'url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80)'}} />
+                <div className={styles.projectPreviewContent}>
+                  <h3 className={styles.projectPreviewTitle}>GeoSurveyor</h3>
+                  <p className={styles.projectPreviewDesc}>A drone-based land survey and mapping tool, providing high-resolution geospatial data for infrastructure projects.</p>
+                  <div className={styles.projectPreviewTechStack}>
+                    <span>Vue.js</span> <span>Python</span> <span>QGIS</span>
+                  </div>
+                  <a className={styles.projectPreviewButton} href="#" target="_blank" rel="noopener noreferrer">
+                    View Project
+                    <svg width="18" height="18" fill="#00fff7" style={{marginLeft: 6}} viewBox="0 0 24 24"><path d="M14 3v2h3.59L7 15.59 8.41 17 19 6.41V10h2V3z"/><path d="M5 5v14h14v-7h-2v5H7V7h5V5H5z"/></svg>
+                  </a>
                 </div>
               </div>
             </div>

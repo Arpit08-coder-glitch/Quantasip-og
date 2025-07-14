@@ -327,39 +327,71 @@
   margin: 0 auto;
   background: #fff;
   border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  border: 1.5px solid #e0e0e0;
-}
-.contactInput, .contactTextarea {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
   width: 100%;
-  margin-bottom: 12px;
-  padding: 10px 12px;
-  border-radius: 6px;
-  border: 1.5px solid #bdbdbd;
+  box-sizing: border-box;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.formGroup label {
   font-size: 1rem;
-  background: #f8f9fa;
-  color: #222;
-  transition: border 0.2s;
+  font-weight: 500;
+  color: #333;
 }
-.contactInput:focus, .contactTextarea:focus {
-  border: 1.5px solid #1a237e;
-  outline: none;
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: #333;
+  resize: none;
+  box-sizing: border-box;
 }
-.contactButton {
-  background: #1a237e;
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: 2px solid #007bff;
+  border-color: #007bff;
+}
+.checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+.recaptchaPlaceholder {
+  width: 100%;
+  height: 48px;
+  background: #e3f2fd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1rem;
+}
+.submitButton {
+  background: #28a745;
   color: #fff;
-  padding: 0.7rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
   border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
   transition: background 0.2s;
-  margin-top: 4px;
 }
-.contactButton:hover {
-  background: #ff9800;
-  color: #fff;
+.submitButton:hover {
+  background: #218838;
 }
 .footer {
   margin-top: 40px;
@@ -437,6 +469,13 @@
 }
 .searchButton:hover {
   background: #fce4ec;
+}
+
+.getInTouchSection h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #183153;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 900px) {

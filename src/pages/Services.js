@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styles from './Services.module.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { useLocation } from 'react-router-dom';
 
 // Placeholder images (replace with real images as needed)
 const heroImg = 'https://quantasip.com/wp-content/uploads/2023/05/20230512205803_fpdl.in_gis-product-made-after-processing-aerial-pictures-taken-from-drone-ai_175356-13379_large.webp';
@@ -58,6 +59,7 @@ const Services = () => {
   const [heroFull, setHeroFull] = useState(true);
   const heroRef = useRef(null);
   const belowRef = useRef(null);
+  const location = useLocation();
 
   // Handle scroll or arrow click to show rest of page
   useEffect(() => {
@@ -69,6 +71,19 @@ const Services = () => {
     }
     return () => window.removeEventListener('scroll', onScroll);
   }, [heroFull]);
+
+  // Scroll to anchor if hash is present in URL
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // slight delay to ensure DOM is ready
+      }
+    }
+  }, [location]);
 
   const handleArrowClick = (e) => {
     e.preventDefault();
